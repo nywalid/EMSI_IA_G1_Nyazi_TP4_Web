@@ -22,7 +22,7 @@ public class LlmClient implements Serializable {
 
     public LlmClient() {
 
-        String apiKey = System.getenv("GEMINI_KEY");  // ✅ même clé que TP1
+        String apiKey = System.getenv("GEMINI_KEY");
         ChatModel model = GoogleAiGeminiChatModel.builder()
                 .apiKey(apiKey)
                 .modelName("gemini-2.5-flash")

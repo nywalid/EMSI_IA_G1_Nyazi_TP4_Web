@@ -7,6 +7,7 @@ import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import ma.emsi.nyazi.tp4_web_nyazi.llm.LlmClient;
+import ma.emsi.nyazi.tp4_web_nyazi.llm.LlmClientRoutage;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ import java.util.List;
 public class Bb implements Serializable {
 
     @Inject
-    private LlmClient llmClient;
+    private LlmClientRoutage llmClient;
 
 
     /**
